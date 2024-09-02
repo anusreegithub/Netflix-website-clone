@@ -12,6 +12,10 @@
   font-family: netflix-h2;
   src: url("../font/NetflixSans_W_Lt.woff");
 }
+@font-face {
+  font-family: netflix-regular;
+  src: url("../font/HandsetSansKufiArabic-Regular.woff");
+}
 
 
 * {
@@ -37,7 +41,7 @@ body {
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%, rgba(0, 0, 0, 0.8965) 8.500%, rgba(0, 0, 0, 0.8861) 17.00%, rgba(0, 0, 0, 0.8688) 25.50%, rgba(0, 0, 0, 0.8444) 34.00%, rgba(0, 0, 0, 0.8132) 42.50%, rgba(0, 0, 0, 0.7750) 51.00%, rgba(0, 0, 0, 0.7368) 59.50%, rgba(0, 0, 0, 0.7056) 68.00%, rgba(0, 0, 0, 0.6813) 76.50%, rgba(0, 0, 0, 0.6639) 85.00%, rgba(0, 0, 0, 0.6535) 93.50%, rgba(0, 0, 0, 0.6500) 102.0%),
     url("../images/hero.jpg") !important;
     position: relative; 
     background-repeat: no-repeat;
@@ -111,13 +115,14 @@ nav {
     align-items: center;
     border-radius: 4px;
     border: none;
+    
 
   }
   
   .dropdown {
     position: relative;
     display: inline-block;
-    border: 1px solid white;
+    border:1px solid gray;
     border-radius: 4px;
     
   }
@@ -197,15 +202,19 @@ select {
   top: 56%;
   left: 50%;
   width: 777px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   color: white;
 }
 
 .sub-heading-1 {
-    font-size: 19px;
-    margin-top: 20px;
-    font-family: netflix-sans;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: Segoe UI;
+    margin-top: 10px;
     margin-bottom: 30px;
+    font-weight: 700;
+
+
 }
 
 .sub-heading-2 {
@@ -214,13 +223,16 @@ select {
     font-weight: 800;
 }
 .subscribe {
-    margin-top: 15px;
+    margin-top: 18px;
+    position: relative;   
+    display: flex;
+    justify-content: center;
 }
 .email {
     font-size: 1rem;
     line-height: 1.5;
     padding: 18px 10px 18px 18px;
-    border: 0.2px solid rgb(225, 224, 224) ;
+    border-width: thin;
     height: 100%;
     color: white;
     border-radius: 3px;
@@ -229,27 +241,45 @@ select {
     border: 4px white ;
 }
 input {
-    background-color: transparent;
-    width: 420px;
+      background-color: #151010;
+      width: 350px;
+    border: 1px solid gray;
+     
+      
+}
+.email::placeholder {
+  color:#B5B4B4;
+  font-family: netflix-h2;
+  font-weight: 800;
 }
 .get-started {
     background-color:#E50914;
     border: none;
     color: white;
-    width: 190px;
-    padding: 18px;
+    width: 210px;
+    padding: 14px;
     height: 100%;
     margin-left: 8px;
     border-radius: 3px;
-    font-size: 1.2rem;
-    font-family: netflix-sans;
+    font-size: 1.45rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 700;
+    margin-bottom: 23px;
+  
+
 
 
 }
+.get-started img {
+  margin-left: 8px;
+  width: 20px;
+}
 .second-section {
-    width:1158px;
+    width:1230px;
     margin: auto;
     margin-top: 30px;
+  
+
 }
 .multi-selects {
     display: flex;
@@ -312,22 +342,23 @@ input {
   
   .overlay-text {
     position: absolute;
-    top: 73%; 
+    top: 72.5%; 
     left: 15%; 
     transform: translate(-50%, -50%); 
     color: black;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    font-size: 100px; 
+    font-size: 97px; 
     text-align: center;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family:netflix-sans;
+    
   }
   .third-section {
-    width: 1180px;
+    width:1230px;
     margin: auto;
     margin-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     height: 400px;
    
     
@@ -345,8 +376,8 @@ input {
     float: left;
     width: 410px;
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-    padding: 25px;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 15px;
     border-radius: 20px;
     margin-right: 23px;
     height: 290px;
@@ -355,20 +386,17 @@ input {
   }
 
   .paragraph {
-    margin-top: 30px;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: netflix-h2;
-    color: rgba(255, 255, 255, 0.7);
+    margin-top: 15px;
+    font-size: 0.97rem;
+    font-weight: 900;
+    font-family:netflix;
+    color: rgba(236, 235, 235, 0.8);
   }
   .svg-icons {
-    margin-top: 50px;
-    float: right;
+    margin-top: 70px;
+    float:inline-end;
   }
-  .svg-icons-last {
-    margin-top: 10px;
-    float: right;
-  }
+  
   h3 {
     margin-top: 50px;
   }
@@ -376,6 +404,10 @@ input {
   .faq {
     width:1188px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
   }
  
@@ -391,19 +423,22 @@ input {
   }
   .faq-sections {
     height: 85px;
-    width:990px;
+    width:1230px;
     background-color:#2D2D2D;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+.faq-sections:hover {
+  background-color: #414141;
+  cursor: pointer;
+}
   .questions {
     padding: 30px;
-    font-size: 24px;
-    font-family: netflix-h2;
-    font-weight: 500;
+    font-size: 23px;
+    font-family: netflix;
+    font-weight: 800;
 
   }
   .plus {
@@ -412,50 +447,56 @@ input {
   }
 
   .email-subscribe {
-    width:1188px;
+    width:1230px;
     margin: auto;
     margin-top: 100px;
-    margin-bottom: 50px;
     font-weight: 600;
     font-family: netflix-sans;
+    text-align: center;
   }
 
   .email-address {
-    width: 800px;
+    width: 550px;
     font-size: 1rem;
     line-height: 1.5;
     padding: 15px 10px 15px 15px;
     height: 100%;
-    color: white;
     border-radius: 3px;
     margin-top: 20px;
     line-height: 1.5;
     border: 0.2px solid rgb(143, 143, 143) ;
     height: 100%;
   }
+  
+  .email-address::placeholder {
+    color: #A8A8A8;
+    font-weight: 900;
+  }
   .get-started-email {
-    width: 200px;
+    width: 210px;
     padding: 13px 20px 12px 25px;
     background-color: #E50914;
     color: white;
     border-style: solid;
     font-family: netflix-h2;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 23px;
     border-radius: calc(0.1875rem);
     border-color: rgba(0, 0, 0, 0);
+    align-items: center;
 
   }
 
   .call {
    padding: 30px;
    color: rgba(255, 255, 255, 0.7);
+   text-align: left;
+   margin-top: 50px;
   }
 
   .footer {
-    width:1188px;
+    width:1230px;
     margin: auto;
-    margin-top: 30px;
     margin-bottom: 50px;
   }
   .footer-contents {
@@ -466,17 +507,22 @@ input {
   }
   .columns {
     margin-right: 145px;
+ 
+
     
   }
   .columns p {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
     font-family: netflix-h2;
     font-weight: 500;
+    color: #A8A8A8;
+    font-weight: 900;
   }
   .second-end {
-    width:1188px;
+    width:1230px;
     margin: auto;
+    margin-top: 20px;
 
   }
 
@@ -486,7 +532,7 @@ input {
     margin-left: 30px;
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.875rem;
-    font-weight: 400;
+    font-weight: 800;
   }
   a {
     color: rgba(255, 255, 255, 0.7);
